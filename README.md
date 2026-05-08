@@ -1,3 +1,4 @@
+```text
 ██╗   ██╗██╗███████╗██╗ ██████╗ ███╗   ██╗██╗███╗   ██╗████████╗
 ██║   ██║██║██╔════╝██║██╔═══██╗████╗  ██║██║████╗  ██║╚══██╔══╝
 ██║   ██║██║███████╗██║██║   ██║██╔██╗ ██║██║██╔██╗ ██║   ██║
@@ -6,7 +7,14 @@
   ╚═══╝  ╚═╝╚══════╝╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝   ╚═╝
 
               Visual Intelligence Toolkit
+```
+<p align="center">
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
 
 ## Overview
 
