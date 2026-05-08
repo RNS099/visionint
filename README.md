@@ -156,3 +156,57 @@ python main.py image.jpg --rsearch
 ```bash
 python main.py image.jpg 
 ```
+
+# Requirements
+
+- Python 3.x
+- Tesseract OCR
+- Internet connection (for reverse image search)
+
+---
+
+# Technologies Used
+
+- Python
+- Pillow
+- pytesseract
+- requests
+- exif
+- colorama
+- Docker
+
+---
+
+# Legal Disclaimer
+
+This project is intended strictly for:
+
+- Educational purposes
+- Ethical cybersecurity learning
+- Lawful OSINT investigations
+
+The user is solely responsible for complying with applicable laws and regulations.
+
+---
+
+# Future Improvements
+
+- Face detection
+- Geolocation mapping
+- AI-based object detection
+- Multi-engine reverse search
+- Report generation
+- GUI version
+
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+# Author
+
+Developed by **Rapaka Naga Sai**
+
+**Cybersecurity • OSINT • Digital Forensics**
