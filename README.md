@@ -172,9 +172,8 @@ Create a folder named `images` and place target images inside it.
 Example:
 
 ```text
-project/
-└── images/
-    └── sample.jpg
+images/
+└── sample.jpg
 ```
 
 ---
