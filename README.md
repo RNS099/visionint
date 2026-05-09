@@ -119,7 +119,7 @@ configure_tesseract(
 
 # Usage
 
-## Basic Scan
+## Full Scan
 
 ```bash
 python main.py image.jpg
@@ -151,11 +151,81 @@ python main.py image.jpg --rsearch
 
 ---
 
-## Full Scan
+# Docker Usage (Recommended)
+
+VisionINT can be used directly via Docker without installing Python dependencies locally.
+
+---
+
+## Pull Image from Docker Hub
 
 ```bash
-python main.py image.jpg 
+docker pull naga0x1n/visionint:latest
 ```
+
+---
+
+## Prepare Images Folder
+
+Create a folder named `images` and place target images inside it.
+
+Example:
+
+```text
+project/
+└── images/
+    └── sample.jpg
+```
+
+---
+
+## Run VisionINT Using Docker 
+
+### Full Scan
+
+```powershell
+docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg
+```
+
+---
+
+### Extract EXIF Metadata
+
+```powershell
+docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --exif
+```
+
+---
+
+### Extract OCR Text
+
+```powershell
+docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --ocr
+```
+
+---
+
+### Reverse Image Search
+
+```powershell
+docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --rsearch
+```
+
+---
+
+# Notes
+
+- The `images` folder from the host system is mounted inside the container at `/images`
+- Your input image should be present in a Directory named "images"
+- Always use container paths like:
+
+```text
+/images/sample.jpg
+```
+
+inside Docker commands.
+
+- Docker automatically removes the container after execution because of the `--rm` flag.
 
 # Requirements
 
