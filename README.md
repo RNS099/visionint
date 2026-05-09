@@ -182,32 +182,52 @@ images/
 
 ### Full Scan
 
+powershell/linux
 ```powershell
 docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg
+```
+cmd
+```cmd
+docker run --rm -v "%cd%\images:/images" naga0x1n/visionint /images/sample.jpg
 ```
 
 ---
 
 ### Extract EXIF Metadata
 
+powershell/linux
 ```powershell
 docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --exif
+```
+cmd
+```cmd
+docker run --rm -v "%cd%\images:/images" naga0x1n/visionint /images/sample.jpg --exif
 ```
 
 ---
 
 ### Extract OCR Text
 
+powershell/linux
 ```powershell
 docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --ocr
+```
+cmd
+```cmd
+docker run --rm -v "%cd%\images:/images" naga0x1n/visionint /images/sample.jpg --ocr
 ```
 
 ---
 
 ### Reverse Image Search
 
+powershell/linux
 ```powershell
 docker run --rm -v "${PWD}/images:/images" naga0x1n/visionint /images/sample.jpg --rsearch
+```
+cmd
+```cmd
+docker run --rm -v "%cd%\images:/images" naga0x1n/visionint /images/sample.jpg --rsearch
 ```
 
 ---
